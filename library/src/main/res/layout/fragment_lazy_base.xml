@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ViewStub
+        android:id="@+id/fragment_stub_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 加载等待 -->
+
+    <ViewStub
+        android:id="@+id/fragment_stub_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/stub_progress_wait" />
+
+    <!-- 重新加载 -->
+
+    <ViewStub
+        android:id="@+id/fragment_stub_reload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/stub_reload_layout" />
+    <!-- 无数据的提示 -->
+
+    <ViewStub
+        android:id="@+id/fragment_stub_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/stub_no_data" />
+
+</RelativeLayout>

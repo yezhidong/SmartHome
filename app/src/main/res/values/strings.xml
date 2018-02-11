@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmartHome</string>
+    <string name="title_home">我的房间</string>
+    <string name="title_dashboard">智能场景</string>
+    <string name="title_notifications">用户中心</string>
+    <string name="hiflying_smartlinker_new_module_found">发现设备！</string>
+    <string name="hiflying_smartlinker_completed">设备连接完成</string>
+    <string name="hiflying_smartlinker_timeout">设备连接超时</string>
+    <string name="hiflying_smartlinker_waiting">正在连接</string>
+</resources>
