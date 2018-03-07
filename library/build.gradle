@@ -24,21 +24,21 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
-
     // umeng分析
     compile 'com.umeng.analytics:analytics:latest.integration'
     // dagger
-    compile 'com.google.dagger:dagger:2.4'
-    apt 'com.google.dagger:dagger-compiler:2.4'
+    //    compile 'com.google.dagger:dagger:2.4'
+    //    apt 'com.google.dagger:dagger-compiler:2.4'
     // eventBus
     compile 'org.greenrobot:eventbus:3.0.0'
     // http://qmuiteam.com/android/page/document.html
     compile 'com.qmuiteam:qmui:1.0.3'
     // 网络请求 https://github.com/jeasonlzy/okhttp-OkGo
     compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.lzy.net:okrx2:2.0.2'
     // https://github.com/square/retrofit
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     // https://github.com/ReactiveX/RxJava
@@ -46,6 +46,5 @@ dependencies {
     // https://github.com/JakeWharton/butterknife
     compile 'com.jakewharton:butterknife:8.8.1'
     apt 'com.jakewharton:butterknife-compiler:8.8.1'
-
-
+    compile 'com.google.code.gson:gson:2.2.4'
 }

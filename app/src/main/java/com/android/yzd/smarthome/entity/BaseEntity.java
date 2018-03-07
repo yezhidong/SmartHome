@@ -1,18 +1,26 @@
 package com.android.yzd.smarthome.entity;
 
 /**
- * <p>Title:        Register
+ * <p>Title:        BaseEntity
  * <p>Description:
  * <p>@author:      yezd
  * <p>Copyright:    Copyright (c) 2010-2017
  * <p>Company:      @咪咕动漫
- * <p>Create Time:  2017/10/14 上午10:41
+ * <p>Create Time:  2018/2/26 下午10:02
  * <p>@author:
  * <p>Update Time:
  * <p>Updater:
  * <p>Update Comments:
  */
-public class Register {
+public class BaseEntity<T> {
 
-    public UserInfo Register;
+    private T data;
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
 }

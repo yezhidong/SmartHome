@@ -89,7 +89,7 @@ public abstract class BaseLazyFragment extends LazyFragment {
 
         setContentView(R.layout.fragment_lazy_base);
         initView();
-        setBaseListensers();
+        setBaseListeners();
         setContainerView();
         initComponent(rlContent);
         setListener();
@@ -351,7 +351,7 @@ public abstract class BaseLazyFragment extends LazyFragment {
      * @Create Time:2016/1/8
      * @version:
      */
-    private void setBaseListensers() {
+    private void setBaseListeners() {
         if (mOnReloadListener != null) {
             if (reloadLayout == null) {
                 ViewStub stub = (ViewStub) findViewById(R.id.fragment_stub_reload);

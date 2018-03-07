@@ -14,5 +14,5 @@ package com.android.yzd.smarthome.config;
  */
 public class Config {
 
-    public static final String BASE_URL = "http://117.30.125.130:51002/home_auto_app_req.js";
+    public static final String BASE_URL = "http://117.30.84.224:51002/home_auto_app_req.js";
 }

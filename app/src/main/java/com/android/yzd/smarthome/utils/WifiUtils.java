@@ -25,28 +25,29 @@ public class WifiUtils {
     }
 
     public static WifiUtils getInstants() {
-        return Holder.single;
+        return Holder.INSTANCE;
     }
 
     private static class Holder {
-        private static WifiUtils single = new WifiUtils();
+        private static WifiUtils INSTANCE = new WifiUtils();
     }
 
     /**
      * 获取所连接Wi-Fi的 ssid
+     *
      * @param context
      * @return
      */
-    public String getSSid(Context context){
+    public String getSSid(Context context) {
 
         WifiManager wm = (WifiManager) context.getSystemService(WIFI_SERVICE);
-        if(wm != null){
+        if (wm != null) {
             WifiInfo wi = wm.getConnectionInfo();
-            if(wi != null){
+            if (wi != null) {
                 String ssid = wi.getSSID();
-                if(ssid.length()>2 && ssid.startsWith("\"") && ssid.endsWith("\"")){
-                    return ssid.substring(1,ssid.length()-1);
-                }else{
+                if (ssid.length() > 2 && ssid.startsWith("\"") && ssid.endsWith("\"")) {
+                    return ssid.substring(1, ssid.length() - 1);
+                } else {
                     return ssid;
                 }
             }
